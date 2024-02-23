@@ -1,0 +1,117 @@
+package polinomio;
+
+import java.util.Scanner;
+
+public class Polinomio {
+
+    public static void main(String[] args) {
+        int a, b, c;
+
+        Scanner n = new Scanner(System.in);
+        char resp = 's';
+        while (true) {
+            System.out.println("Ingrese A");
+            a = n.nextInt();
+            System.out.println("Ingrese B");
+            b = n.nextInt();
+            System.out.println("Ingrese c");
+            c = n.nextInt();
+
+            System.out.printf("la solucuion es ");
+
+            double x1, x2, raiz;
+            raiz = Math.sqrt(b * b - 4 * a * c);
+package polinomio;
+
+import java.util.Scanner;
+
+public class Polinomio {
+
+    public static void main(String[] args) {
+        int a, b, c;
+
+        Scanner n = new Scanner(System.in);
+        char resp = 's';
+        while (true) {
+            System.out.println("Ingrese A");
+            a = n.nextInt();
+            System.out.println("Ingrese B");
+            b = n.nextInt();
+            System.out.println("Ingrese c");
+            c = n.nextInt();
+
+            System.out.printf("la solucuion es ");
+
+            double x1, x2, raiz;
+            raiz = Matpackage polinomio;
+
+import java.util.Scanner;
+
+public class Polinomio {
+
+    public static void main(String[] args) {
+        int a, b, c;
+
+        Scanner n = new Scanner(System.in);
+        char resp = 's';
+        while (true) {
+            System.out.println("Ingrese A");
+            a = n.nextInt();
+            System.out.println("Ingrese B");
+            b = n.nextInt();
+            System.out.println("Ingrese c");
+            c = n.nextInt();
+
+            System.out.printf("la solucuion es ");
+
+            double x1, x2, raiz;
+            raiz = Math.sqrt(b * b - 4 * a * c);
+
+            x1 = (-b + raiz) / 2 * a;
+            x2 = (-b - raiz) / 2 * a;
+
+            System.out.printf(" x1" + x1);
+            System.out.printf(" x2" + x2);
+
+            System.out.println("desea continuar [s/n]");
+            resp = n.next().charAt(0);
+            if (resp != 's') {
+                break;
+            }
+        }
+
+    }
+    }
+h.sqrt(b * b - 4 * a * c);
+
+            x1 = (-b + raiz) / 2 * a;
+            x2 = (-b - raiz) / 2 * a;
+
+            System.out.printf(" x1" + x1);
+            System.out.printf(" x2" + x2);
+
+            System.out.println("desea continuar [s/n]");
+            resp = n.next().charAt(0);
+            if (resp != 's') {
+                break;
+            }
+        }
+
+    }
+    }
+
+            x1 = (-b + raiz) / 2 * a;
+            x2 = (-b - raiz) / 2 * a;
+
+            System.out.printf(" x1" + x1);
+            System.out.printf(" x2" + x2);
+
+            System.out.println("desea continuar [s/n]");
+            resp = n.next().charAt(0);
+            if (resp != 's') {
+                break;
+            }
+        }
+
+    }
+    }
