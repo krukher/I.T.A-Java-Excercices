@@ -1,0 +1,28 @@
+
+package sumar1roy2do;
+import java.util.Scanner;
+/**
+ *
+ * @author fabian
+ */
+public class Sumar1roy2do {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingresa un número de 4 cifras: ");
+        int numero = scanner.nextInt();
+    // Verificamos que el número tenga 4 cifras
+        if (numero >= 1000 && numero <= 9999) {
+            // Obtenemos la primera cifra
+            int primeraCifra = numero / 1000;
+            // Obtenemos la última cifra
+            int ultimaCifra = numero % 10;
+            // Sumamos las primeras y últimas cifras
+            int suma = primeraCifra + ultimaCifra;
+
+            System.out.println("La suma entre la primera y la última cifra es: " + suma);
+    }
+}}
