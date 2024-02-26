@@ -1,0 +1,158 @@
+/*
+programa principal
+ */
+package Repaso;
+
+import java.util.Scanner;
+import Repaso.metodos;
+
+/**
+ *
+ * @author fabi an
+ */
+public class zmain {
+
+    public static void main(String[] args) {
+        //instanciar la clase Scanner
+        Scanner sc = new Scanner(System.in);
+
+        char resp = 's';
+        while (true) {
+            System.out.printf("Selecione que quiere realizar");
+            int i = sc.nextInt();
+
+            Scanner n = new Scanner(System.in);
+
+            switch (i) {
+                case 0:
+                    System.out.println("Suma");
+                    System.out.println("Digita un Numero A");
+                    int a = sc.nextInt();
+                    System.out.println("Digita un Numero B");
+                    int b = sc.nextInt();
+
+                    int suma = metodos.suma(a, b);
+                    System.out.printf("la suma de %d+%d=%d", a, b, suma);
+
+                    break;
+                case 1:
+                    System.out.println("resta");
+                    System.out.println("Digita un Numero A");
+                    a = sc.nextInt();
+                    System.out.println("Digita un Numero B");
+                    b = sc.nextInt();
+
+                    int resta = metodos.resta(a, b);
+                    System.out.printf("la resta de %d-%d=%d", a, b, resta);
+                    break;
+
+                case 2:
+                    System.out.println("Multiplicacion");
+                    System.out.println("Digita un Numero A");
+                    a = sc.nextInt();
+                    System.out.println("Digita un Numero B");
+                    b = sc.nextInt();
+
+                    int mult = metodos.mult(a, b);
+                    System.out.printf("la multi de %d*%d= %d", a, b, mult);
+                    break;
+                case 3:
+                    System.out.println("Division");
+                    System.out.println("Digita un Numero A");
+                    a = sc.nextInt();
+                    System.out.println("Digita un Numero B");
+                    b = sc.nextInt();
+                    if (a != 0 && b != 0) {
+                        double div = metodos.div(a, b);
+                        System.out.printf("la division de %d/%d=%d", a, b, div);
+                    } else {
+                        System.out.println("no se puede dividir entre 0");
+                    }
+
+                    break;
+
+                case 4:
+                    System.out.println("Digita un Numero A");
+
+                    System.out.println("inverso");
+                    System.out.println("Digita un Numero A");
+                    a = sc.nextInt();
+
+                    double inv = metodos.inv(a);
+                    System.out.printf("la inv de %d = %d", a, inv);
+
+                    break;
+
+                case 5:
+                    System.out.println("potencia");
+                    System.out.println("Digita Base");
+                    a = sc.nextInt();
+                    System.out.println("Digita exponente");
+                    b = sc.nextInt();
+
+                    double pow = metodos.pow(a, b);
+
+                    System.out.printf("%dla base %d el exponente base %d = %d ", a, b, pow);
+
+                    break;
+
+                case 6:
+                    System.out.println("raiz");
+                    System.out.println("Digita A");
+                    a = sc.nextInt();
+
+                    double raiz = metodos.raiz(a);
+
+                    System.out.printf("la raiz cuadrada de %d = %d ", a, raiz);
+
+                    break;
+                case 7:
+                    System.out.println("cambio");
+                    System.out.println("Digita A");
+                    a = sc.nextInt();
+                    System.out.println("Digita ");
+                    b = sc.nextInt();
+                    int cambio = metodos.cambio(a, b);
+
+                    System.out.printf("el cambio  de %d y %d es %d   ", a, b, cambio);
+
+                    break;
+
+                case 8:
+                    System.out.println("porcentaje");
+                    System.out.println("Digita A");
+                    a = sc.nextInt();
+                    System.out.println("PORCENTAJE");
+                    b = sc.nextInt();
+                    double porcentaje = metodos.porcentaje(a, b);
+
+                    System.out.printf("el PORCENTAJE de %d es %d   ", a, porcentaje);
+
+                    break;
+
+                case 9:
+                    System.out.println("FACTORIAL");
+                    System.out.println("Digita A");
+                    a = sc.nextInt();
+                    if (a != 0) {
+                        
+                        int fac = metodos.fac(a);
+
+                        System.out.printf("el factorial de %d es %d", a, fac);
+                        } else {
+                        System.out.println("no se puede con 0");
+                    }
+
+                    break;
+
+                default:
+
+                    System.out.println("desea continuar [s/n]");
+                    resp = sc.next().charAt(0);
+                    if (resp != 's') {
+                        break;
+                    }
+            }
+        }
+    }
+}
